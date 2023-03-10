@@ -1,7 +1,7 @@
 Role Name
 =========
 
-For Regional Win11React
+For WRCCDC Regional Win11React
 
 Reference: https://github.com/blueedgetechno/win11React
 
