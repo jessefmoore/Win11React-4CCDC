@@ -1,5 +1,5 @@
 [Unit]
-Description=win11React Container
+Description=win11ccdc Container
 Wants=NetworkManager.service network-online.target docker.service
 After=NetworkManager.service network-online.target docker.service
 Requires=docker.service
@@ -15,13 +15,13 @@ TimeoutStartSec=0
 
 ExecStart=/usr/bin/docker run \
         -d --privileged=true \
-        --name win11react \
-        -h win11react \
+        --name win11ccdc \
+        -h win11ccdc \
         -p 3000:3000 \
 #        -p 8089:8089 \
 #        -v /opt/splunk/etc/apps/:/opt/splunk/etc/apps/ \
 #        --network="bridge" \
-        blueedge/win11react:latest
+        jessefmoore/win11ccdc
 # if you want to stop later then uncomment the below ExecStop and comment the Restart=always
 #ExecStop=/usr/bin/docker stop win11react
 #ExecStop=/usr/bin/docker rm win11react       
